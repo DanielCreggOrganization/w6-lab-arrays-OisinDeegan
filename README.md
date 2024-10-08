@@ -14,11 +14,11 @@ In Java, an array is a collection of variables of the same type, stored in a con
 
 ```mermaid
 graph LR
-A[Array] --> B[Element 0]
-A --> C[Element 1]
-A --> D[Element 2]
-A --> E[...]
-A --> F[Element N-1]
+B[Element at index 0]
+B --> C[Element at index 1]
+C --> D[Element at index 2]
+D --> E[...]
+E --> F[Element at index N-1]
 ```
 
 ## Different Ways of Declaring and Assigning an Array
@@ -84,6 +84,11 @@ public class ArrayDeclaration {
 
 </details>
 
+### DIY Exercise
+
+- **Task**: Declare an array of `double` with the values `1.5`, `2.5`, `3.5`, `4.5`.
+- **Hint**: Use inline initialization similar to the examples above.
+
 ## Array Length
 
 The length of an array refers to the number of elements it can hold. In Java, you can access the length using the `.length` property.
@@ -107,6 +112,11 @@ The length of the array is: 5
 ```
 
 </details>
+
+### DIY Exercise
+
+- **Task**: Write a program that calculates and prints the length of an array of your choice.
+- **Hint**: Create an array and use the `.length` property to get its size.
 
 ## Modifying Arrays
 
@@ -136,6 +146,11 @@ Apple Blueberry Cherry
 ```
 
 </details>
+
+### DIY Exercise
+
+- **Task**: Given an array `int[] nums = {10, 20, 30, 40}`, change the third element to `35` and print the array.
+- **Hint**: Access the element at index 2 and assign a new value.
 
 ## 2D Arrays
 
@@ -193,24 +208,7 @@ Element at (1,2): 6
 
 </details>
 
-## DIY Exercise Section
-
-### Exercise 1: Declaring and Initializing Arrays
-
-- **Task**: Declare an array of `double` with the values `1.5`, `2.5`, `3.5`, `4.5`.
-- **Hint**: Use inline initialization.
-
-### Exercise 2: Calculating Array Length
-
-- **Task**: Write a program that calculates and prints the length of an array of your choice.
-- **Hint**: Use the `.length` property.
-
-### Exercise 3: Modifying Array Elements
-
-- **Task**: Given an array `int[] nums = {10, 20, 30, 40}`, change the third element to `35` and print the array.
-- **Hint**: Access the element at index 2.
-
-### Exercise 4: Working with 2D Arrays
+### DIY Exercise
 
 - **Task**: Create a 2D array representing the following table and print the sum of all elements.
 
@@ -220,7 +218,7 @@ Element at (1,2): 6
 7 8 9
 ```
 
-- **Hint**: Use nested loops to traverse the 2D array.
+- **Hint**: Use nested loops to traverse the 2D array and accumulate the sum.
 
 ## Summary
 
