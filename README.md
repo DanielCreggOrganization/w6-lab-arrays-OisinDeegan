@@ -654,53 +654,6 @@ Squared array: [1, 4, 9]
 - **Task**: Write a method that takes an array of integers and returns a new array with each element doubled.
 - **Hint**: Iterate over the input array, double each element, and store it in a new array.
 
-## Variable-Length Argument Lists (Varargs)
-
-Java allows methods to accept variable-length arguments using arrays.
-
-### Code Example
-
-```java
-public class VarargsExample {
-    public static void main(String[] args) {
-        printNumbers(1, 2, 3, 4, 5);
-
-        double average = calculateAverage(10, 20, 30);
-        System.out.println("Average: " + average);
-    }
-
-    public static void printNumbers(int... nums) {
-        for (int num : nums) {
-            System.out.print(num + " ");
-        }
-        System.out.println();
-    }
-
-    public static double calculateAverage(int... nums) {
-        int sum = 0;
-        for (int num : nums) {
-            sum += num;
-        }
-        return (double) sum / nums.length;
-    }
-}
-```
-
-<details>
-<summary>Output</summary>
-
-```
-1 2 3 4 5 
-Average: 20.0
-```
-
-</details>
-
-### DIY Exercise
-
-- **Task**: Create a method that calculates the maximum value among any number of integer arguments.
-- **Hint**: Use varargs in the method parameter and iterate to find the maximum.
-
 ## Summary
 
 In this lab, we've covered:
@@ -714,11 +667,8 @@ In this lab, we've covered:
 - Enhanced for loops for efficient iteration.
 - Common array operations like copying, sorting, and searching.
 - Utilizing the `Arrays` utility class for array manipulation.
-- Exception handling related to arrays.
 - Cloning arrays to create independent copies.
-- Understanding and working with 2D and multidimensional arrays.
-- Jagged arrays (irregular arrays).
+- Understanding and working with 2D arrays.
 - Passing arrays to methods.
-- Variable-length argument lists (varargs).
 
 Arrays are a foundational aspect of Java programming, enabling efficient data storage and manipulation. Mastery of arrays will significantly aid in understanding more complex data structures and algorithms. By exploring these additional topics, you've equipped yourself with a robust understanding of arrays in Java.
