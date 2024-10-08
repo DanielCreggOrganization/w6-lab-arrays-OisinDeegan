@@ -20,6 +20,7 @@ C --> D[Element at index 2]
 D --> E[...]
 E --> F[Element at index N-1]
 ```
+Before you begin the below exercises, create a java package called `ie.atu.arrays` to store all your code in. Use the Java Projects file explorer to create the package.  
 
 ## Default Values in Arrays
 
