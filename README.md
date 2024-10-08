@@ -115,7 +115,7 @@ The length of the array is: 5
 
 ### DIY Exercise
 
-- **Task**: Write a program that calculates and prints the length of an array of your choice.
+- **Task**: Write a program that calculates and prints the length of a string array that contains the colours of the rainbow.
 - **Hint**: Create an array and use the `.length` property to get its size.
 
 ## Modifying Arrays
