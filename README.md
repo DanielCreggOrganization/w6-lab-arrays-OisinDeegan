@@ -323,28 +323,11 @@ Apple Blueberry Cherry
 
 ## Arrays of Objects
 
-Arrays in Java can store objects, not just primitive data types.
+Arrays in Java can store objects, not just primitive data types. Below we have a Student class. In the ArrayOfObjects class we will create a students array which will hold Student objects.
 
 ### Code Example
 
 ```java
-public class ArrayOfObjects {
-    public static void main(String[] args) {
-        // Array of Strings (which are objects in Java)
-        String[] names = {"Alice", "Bob", "Charlie"};
-
-        // Array of custom objects
-        Student[] students = new Student[2];
-
-        students[0] = new Student("Dave", 20);
-        students[1] = new Student("Eva", 22);
-
-        for (Student student : students) {
-            System.out.println(student.getName() + " is " + student.getAge() + " years old.");
-        }
-    }
-}
-
 class Student {
     private String name;
     private int age;
@@ -362,6 +345,24 @@ class Student {
 
     int getAge() {
         return age;
+    }
+}
+```
+```java
+public class ArrayOfObjects {
+    public static void main(String[] args) {
+        // Array of Strings (which are objects in Java)
+        String[] names = {"Alice", "Bob", "Charlie"};
+
+        // Array of custom objects
+        Student[] students = new Student[2];
+
+        students[0] = new Student("Dave", 20);
+        students[1] = new Student("Eva", 22);
+
+        for (Student student : students) {
+            System.out.println(student.getName() + " is " + student.getAge() + " years old.");
+        }
     }
 }
 ```
