@@ -1,4 +1,22 @@
+
 # Java Arrays Lab
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Default Values in Arrays](#default-values-in-arrays)
+3. [Different Ways of Declaring and Assigning an Array](#different-ways-of-declaring-and-assigning-an-array)
+4. [Accessing and Iterating Over Array Elements](#accessing-and-iterating-over-array-elements)
+5. [Array Length](#array-length)
+6. [Modifying Arrays](#modifying-arrays)
+7. [Arrays of Objects](#arrays-of-objects)
+8. [Common Array Operations](#common-array-operations)
+9. [The Arrays Utility Class](#the-arrays-utility-class)
+10. [Cloning Arrays](#cloning-arrays)
+11. [2D Arrays](#2d-arrays)
+12. [Passing Arrays to Methods](#passing-arrays-to-methods)
+13. [Summary](#summary)
+
 
 ## Introduction
 
@@ -20,6 +38,7 @@ C --> D[Element at index 2]
 D --> E[...]
 E --> F[Element at index N-1]
 ```
+
 Before you begin the below exercises, create a java package called `ie.atu.arrays` to store all your code in. Use the Java Projects file explorer to create the package.  
 
 ## Default Values in Arrays
@@ -77,6 +96,7 @@ null null null
 - **Task**: Declare an array of `char` with a size of 4 and print out the default values.
 - **Hint**: Do not initialize the array elements; simply print them using a loop.
 
+
 ## Different Ways of Declaring and Assigning an Array
 
 There are several ways to declare and initialize arrays in Java.
@@ -106,7 +126,6 @@ int[] numbers = new int[]{1, 2, 3, 4, 5};
 ```
 
 ### Code Example
-
 ```java
 public class ArrayDeclaration {
     public static void main(String[] args) {
@@ -145,6 +164,8 @@ public class ArrayDeclaration {
 - **Task**: Declare an array of `double` with the values `1.5`, `2.5`, `3.5`, `4.5`.
 - **Hint**: Use inline initialization similar to the examples above.
 
+
+
 ## Accessing and Iterating Over Array Elements
 
 After declaring and initializing an array, you can access its elements using indices and iterate over them using loops.
@@ -168,6 +189,8 @@ for (int i = 0; i < numbers.length; i++) {
 ```
 
 #### Using an Enhanced `for` Loop (For-Each Loop)
+
+The enhanced `for` loop (also called a for-each loop) provides a simpler way to iterate over arrays. It automatically handles the indexing for you.
 
 ```java
 for (int num : numbers) {
@@ -221,10 +244,13 @@ Using enhanced for loop:
 
 </details>
 
+
 ### DIY Exercise
 
 - **Task**: Write a program to print all elements of an array in reverse order.
 - **Hint**: Use a `for` loop starting from the last index.
+
+
 
 ## Array Length
 
@@ -255,9 +281,12 @@ The length of the array is: 5
 - **Task**: Write a program that calculates and prints the length of a string array that contains the colors of the rainbow.
 - **Hint**: Create an array and use the `.length` property to get its size.
 
+
+
 ## Modifying Arrays
 
 You can modify array elements by accessing them via their index and assigning new values.
+
 
 ### Code Example
 
@@ -288,6 +317,9 @@ Apple Blueberry Cherry
 
 - **Task**: Given an array `int[] nums = {10, 20, 30, 40}`, change the third element to `35` and print the array.
 - **Hint**: Access the element at index 2 and assign a new value.
+
+
+
 
 ## Arrays of Objects
 
@@ -349,41 +381,13 @@ Eva is 22 years old.
 - **Task**: Create an array of `Book` objects, initialize their titles and authors, and print out their details.
 - **Hint**: Define a `Book` class with appropriate attributes and methods.
 
-## Enhanced For Loop (For-Each Loop)
 
-The enhanced for loop provides a simpler way to iterate over arrays.
 
-### Code Example
 
-```java
-public class EnhancedForLoop {
-    public static void main(String[] args) {
-        String[] colors = {"Red", "Green", "Blue"};
 
-        for (String color : colors) {
-            System.out.println(color);
-        }
-    }
-}
-```
-
-<details>
-<summary>Output</summary>
-
-```
-Red
-Green
-Blue
-```
-
-</details>
-
-### DIY Exercise
-
-- **Task**: Use an enhanced for loop to calculate the sum of elements in an integer array.
-- **Hint**: Accumulate the sum inside the loop.
 
 ## Common Array Operations
+
 
 ### Copying Arrays
 
@@ -446,7 +450,11 @@ Sorted array: [1, 2, 3, 4, 5]
 - **Task**: Write a program that copies an array and sorts it without altering the original array.
 - **Hint**: Use `System.arraycopy` and `Arrays.sort`.
 
-## The `Arrays` Utility Class
+
+
+
+
+## The Arrays Utility Class
 
 The `java.util.Arrays` class provides utility methods for array manipulation.
 
@@ -500,6 +508,8 @@ Index of 3: 2
 - **Task**: Use the `Arrays` class to compare two arrays for equality.
 - **Hint**: Use `Arrays.equals(array1, array2)`.
 
+
+
 ## Cloning Arrays
 
 You can create a copy of an array using the `clone()` method.
@@ -536,6 +546,8 @@ Cloned array: [10, 2, 3]
 
 - **Task**: Clone an array of strings and modify the clone without affecting the original array.
 - **Hint**: Verify the independence of the arrays after modification.
+
+
 
 ## 2D Arrays
 
@@ -605,6 +617,8 @@ Element at (1,2): 6
 
 - **Hint**: Use nested loops to traverse the 2D array and accumulate the sum.
 
+
+
 ## Passing Arrays to Methods
 
 Arrays can be passed to methods as parameters, and methods can return arrays.
@@ -655,17 +669,18 @@ Squared array: [1, 4, 9]
 - **Task**: Write a method that takes an array of integers and returns a new array with each element doubled.
 - **Hint**: Iterate over the input array, double each element, and store it in a new array.
 
+
+
 ## Summary
 
 In this lab, we've covered:
 
 - Various methods to declare and initialize arrays.
 - Default values assigned to array elements.
-- Accessing and iterating over array elements.
+- Accessing and iterating over array elements using traditional and enhanced for loops.  
 - Utilizing the array's length.
 - Modifying elements within an array.
 - Arrays of objects and how to work with them.
-- Enhanced for loops for efficient iteration.
 - Common array operations like copying, sorting, and searching.
 - Utilizing the `Arrays` utility class for array manipulation.
 - Cloning arrays to create independent copies.
@@ -673,3 +688,5 @@ In this lab, we've covered:
 - Passing arrays to methods.
 
 Arrays are a foundational aspect of Java programming, enabling efficient data storage and manipulation. Mastery of arrays will significantly aid in understanding more complex data structures and algorithms. By exploring these additional topics, you've equipped yourself with a robust understanding of arrays in Java.
+
+```
